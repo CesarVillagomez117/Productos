@@ -31,7 +31,7 @@ if (isset($_POST["guardar"])) {
     $fecha = $_POST["fecha_caducidad"] ?: null;
     $descripcion = $_POST["descripcion"];
 
-    $sql = "INSERT INTO productos 
+    $sql = "INSERT INTO lista 
     (nombre, precio, existencias, fecha_caducidad, descripcion)
     VALUES (?, ?, ?, ?, ?)";
 
