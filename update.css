@@ -1,6 +1,4 @@
-/* =========================
-   RESET
-========================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,28 +6,21 @@
     font-family: "Segoe UI", Arial, sans-serif;
 }
 
-/* =========================
-   FONDO
-========================= */
+
 body {
-    background: #7fa2ab; /* azul grisáceo como la imagen */
+    background: #7fa2ab; 
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* =========================
-   CONTENEDOR
-========================= */
+
 .form-box {
     width: 380px;
     color: #ffffff;
 }
 
-/* =========================
-   TITULO
-========================= */
 .form-box h2 {
     font-size: 16px;
     letter-spacing: 1px;
@@ -40,9 +31,7 @@ body {
     padding-bottom: 10px;
 }
 
-/* =========================
-   INPUTS
-========================= */
+
 .field {
     margin-bottom: 20px;
 }
@@ -72,24 +61,17 @@ body {
     color: rgba(255,255,255,.6);
 }
 
-/* =========================
-   TEXTAREA
-========================= */
+
 .field textarea {
     resize: none;
     height: 80px;
 }
 
-/* =========================
-   SELECT
-========================= */
 select option {
     color: #000;
 }
 
-/* =========================
-   BOTÓN
-========================= */
+
 button {
     margin-top: 10px;
     background: transparent;
