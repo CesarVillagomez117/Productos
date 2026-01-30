@@ -23,7 +23,7 @@
 <?php
 include("conexion.php");
 
-$resultado = $conexion->query("SELECT * FROM productos");
+$resultado = $conexion->query("SELECT * FROM lista");
 
 while ($fila = $resultado->fetch_assoc()) {
 ?>
