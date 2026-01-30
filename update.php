@@ -12,10 +12,10 @@ include("conexion.php");
 $clave = $_GET["clave"];
 
 $resultado = $conexion->query(
-    "SELECT * FROM productos WHERE clave = $clave"
+    "SELECT * FROM lista WHERE clave = $clave"
 );
 
-$producto = $resultado->fetch_assoc();
+$lista = $resultado->fetch_assoc();
 ?>
 
 <h2>Editar Producto</h2>
@@ -23,23 +23,23 @@ $producto = $resultado->fetch_assoc();
 <form method="POST">
     Nombre:
     <input type="text" name="nombre"
-           value="<?php echo $producto["nombre"]; ?>" required><br><br>
+           value="<?php echo $lista["nombre"]; ?>" required><br><br>
 
     Precio:
     <input type="number" step="0.01" name="precio"
-           value="<?php echo $producto["precio"]; ?>" required><br><br>
+           value="<?php echo $lista["precio"]; ?>" required><br><br>
 
     Existencias:
     <input type="number" name="existencias"
-           value="<?php echo $producto["existencias"]; ?>" required><br><br>
+           value="<?php echo $lista["existencias"]; ?>" required><br><br>
 
     Fecha de caducidad:
     <input type="date" name="fecha_caducidad"
-           value="<?php echo $producto["fecha_caducidad"]; ?>"><br><br>
+           value="<?php echo $lista["fecha_caducidad"]; ?>"><br><br>
 
     Descripción:<br>
     <textarea name="descripcion" required><?php
-        echo $producto["descripcion"];
+        echo $lista["descripcion"];
     ?></textarea><br><br>
 
     <input type="submit" name="actualizar" value="Actualizar">
@@ -55,7 +55,7 @@ if (isset($_POST["actualizar"])) {
     $fecha = $_POST["fecha_caducidad"] ?: null;
     $descripcion = $_POST["descripcion"];
 
-    $sql = "UPDATE productos SET
+    $sql = "UPDATE lista SET
         nombre = '$nombre',
         precio = $precio,
         existencias = $existencias,
