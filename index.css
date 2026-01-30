@@ -22,9 +22,6 @@ body {
     box-shadow: 0 0 40px rgba(0,0,0,.6);
 }
 
-/* =========================
-   TITULO
-========================= */
 h1 {
     margin-bottom: 16px;
     font-size: 20px;
@@ -33,16 +30,12 @@ h1 {
     letter-spacing: .5px;
 }
 
-/* =========================
-   TABLA
-========================= */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
 }
 
-/* Encabezados */
 th {
     background: linear-gradient(90deg, #1e40af, #2563eb);
     padding: 12px;
@@ -51,7 +44,6 @@ th {
     color: rgb(145, 86, 86);
 }
 
-/* Celdas */
 td {
     padding: 12px;
     font-size: 13px;
@@ -59,19 +51,14 @@ td {
     color: #e5e7eb;
 }
 
-/* Hover */
 tr:hover {
     background: rgba(59,130,246,.08);
 }
 
-/* =========================
-   BOTONES
-========================= */
 .actions a {
     margin-right: 6px;
 }
 
-/* Botón base */
 .btn {
     padding: 6px 12px;
     font-size: 12px;
@@ -86,7 +73,6 @@ tr:hover {
     background: #2563eb;
 }
 
-/* Secundario */
 .btn-secondary {
     background: #334155;
 }
@@ -95,7 +81,7 @@ tr:hover {
     background: #475569;
 }
 
-/* Peligro */
+
 .btn-danger {
     background: #dc2626;
 }
