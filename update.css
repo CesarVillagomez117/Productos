@@ -1,0 +1,106 @@
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* =========================
+   FONDO
+========================= */
+body {
+    background: #7fa2ab; /* azul grisáceo como la imagen */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =========================
+   CONTENEDOR
+========================= */
+.form-box {
+    width: 380px;
+    color: #ffffff;
+}
+
+/* =========================
+   TITULO
+========================= */
+.form-box h2 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255,255,255,.4);
+    padding-bottom: 10px;
+}
+
+/* =========================
+   INPUTS
+========================= */
+.field {
+    margin-bottom: 20px;
+}
+
+.field label {
+    font-size: 11px;
+    opacity: .8;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.field input,
+.field select,
+.field textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+    padding: 8px 0;
+    color: #fff;
+    font-size: 13px;
+    outline: none;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+    color: rgba(255,255,255,.6);
+}
+
+/* =========================
+   TEXTAREA
+========================= */
+.field textarea {
+    resize: none;
+    height: 80px;
+}
+
+/* =========================
+   SELECT
+========================= */
+select option {
+    color: #000;
+}
+
+/* =========================
+   BOTÓN
+========================= */
+button {
+    margin-top: 10px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgba(255,255,255,.15);
+}
